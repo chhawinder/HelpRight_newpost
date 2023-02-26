@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Messages | Firebase</title>
+        <link rel="stylesheet" href="./style.css"></head>
+
+    <body>
+        <h3 id="new-post">
+            Create a New Post
+        </h3>
+        <div class="container">
+            <form action="" id="contactForm">
+                <div class="alert">Your message sent</div>
+
+                <div class="inputBox">
+                    <label htmlfor="picture" class="inputfield">Picture :
+
+                    </label>
+                    <input type="file" id="picture"></div>
+
+                <div class="inputBox">
+                    <label htmlfor="options" class="inputfield">Options :
+                    </label>
+                    <select id="options">
+                        <option value="">Choose Tags</option>
+                        <option value="option1">Animal help</option>
+                        <option value="option2">Human Medical Help</option>
+                        <option value="option3">Education</option>
+                    </select>
+                </div>
+
+
+                <div class="inputBox">
+                    <textarea id="caption" cols="30" rows="10" placeholder="Write a caption...."></textarea>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" id="location" placeholder="Your location...."/>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" id="amount" placeholder="Your number...."/>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" id="bank_details" placeholder="Your details is....."/>
+                </div>
+
+
+                <div class="inputBox">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="./mail.js"></script>
+    </body>
+
+</html>
